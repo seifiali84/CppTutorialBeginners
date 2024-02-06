@@ -80,14 +80,33 @@ int main(){
 #include <iostream>
 
 int main(){
-    cout << "Hello World!";
+    std::cout << "Hello World!";
     return 0;
 }
 ```
 
+کلمه ی std قبل از cout نشون میده که ما می خوایم تابع cout رو از std که داخل iostream هست استفاده کنیم. در مورد ماهیت std جلوتر بیشتر صحبت می کنیم فعلا در این حد بدونید که میتونه مجموعه ای از توابع رو به ما ارائه بده.
+
 با استفاده از cout میتونیم یک خروجی داشته باشیم. با این سینتکس میشه یک متن رو داخل ترمینال نمایش داد.
 
 دقت داشته باشید که در انتهای هر دستور از سی پلاس پلاس باید علامت سمی کالن ; بزارید که نشان دهنده ی پایان دستور شماست.
+
+### روش دوم برای راحت تر شدن کد نویسی
+
+برای اینکه لازم نباشه هربار به برنامه بگیم که می خوایم از std::cout رو استفاده کنیم میتونیم همون اول به برنامه مون بگیم که همه ی توابع داخل std رو بشناسه و اینجوری دیگه لازم نیست که هربار std رو اول کد بنویسیم و کدمون هم خوانا تر میشه.
+
+برای اینکار باید از کد زیر استفاده کنیم :
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    cout << "Hello World!";
+    return 0;
+}
+```
+با اضافه کردن `using namespace std;` به کدمون میگیم که می خوایم تمام توابع و ویژگی های موجود داخل std داخل برنامه ی ما قابل دسترسی باشن و دیگه نیاز نیست هربار std:: رو قبل از این توابع بنویسیم.
 
 ## رفتن به خط بعد در خروجی ترمینال
 
@@ -109,6 +128,8 @@ int main(){
 ```cpp
 #include <iostream>
 
+using namespace std;
+
 int main(){
     cout << "this is the first line \n this is the second line";
     return 0;
@@ -126,6 +147,8 @@ this is the second line
 
 ```cpp
 #include <iostream>
+
+using namespace std;
 
 int main(){
     cout << "this is the first line\n";
@@ -174,6 +197,9 @@ message */
 ```cpp
 // includes :
 #include <iostream>
+
+using namespace std;
+
 /*
 ------ the main method ------
 */
