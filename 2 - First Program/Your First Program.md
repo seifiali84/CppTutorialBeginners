@@ -141,7 +141,7 @@ int main(){
 ```output
 this is the first line 
 this is the second line
-````
+```
 
 برای مرتب تر بودن کد بهتره که به جای کد بالا از این کد استفاده کنیم :
 
@@ -216,4 +216,3 @@ int main(){
 this is the first line
 this is the      second line
 ```
-
