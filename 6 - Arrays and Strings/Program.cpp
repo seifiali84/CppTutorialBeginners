@@ -4,41 +4,105 @@
 using namespace std;
 int main()
 {
+    // Syntax
+    string Cars[] = {"Benz", "BMW", "Pride"};
+    cout << Cars[2] << "\n"; // سومین عضو از لیست.
 
-    int Numbers[5];
-    Numbers[0] = 10;
-    Numbers[1] = 20;
-    // cout << Numbers.front() << "\n";
-    int Numbers1[2];
-    // cout << size(Numbers1) << "\n";
+    // working with Arrays
+    int Numbers[12];
 
-    int Numbers2[] = {1, 2, 3};
-    // string input;
-    // cin >> input;
-    // cout << input << "\n";
+    Numbers[0] = 1; // مقدار دهی به خونه ی اول
+    Numbers[1] = 2; // مقدار دهی به خونه ی دوم
 
-    // string input;
-    // getline(cin, input);
-    // cout << input << "\n";
+    cout << Numbers[0] << "\n"; // نمایش خونه ی اول
+    Numbers[0] = 20;            // تغییر مقدار خونه ی اول
+    cout << Numbers[0] << "\n"; // نمایش خونه ی اول
 
-    // string Name;
-    // getline(cin, Name);
-    // Name[0] = 'P';
-    // cout << size(Name) << "\n";
+    // size() and sizeof()
+    float Scores[] = {14.5, 12.3, 18.9};
+    cout << sizeof(Scores) << "\n"; // show size of Score in RAM
 
-    // string Name;
-    // getline(cin , Name); // ورودی را از کاربر دریافت می کنیم.
-    // char First = Name[0]; // مقدار اولین حرف از اسم کاربر رو داخل یک متغیر نگه میداریم تا بعد از جابه جا کردن این مقدار با حرف آخر فامیل این مقدار رو از دست ندیم.
-    // int Length = size(Name); // طول این متن رو با استفاده از دستور سایز میگیریم و داخل این متغیر ذخیره می کنیم.
-    // Name[0] = Name[Length - 1]; // طول متن رو منهای یک می کنیم تا ایندکس آخرین حرف از ورودی کاربر رو به دست بیاریم. (آخرین ایندکس همیشه از تعداد اعضا یکی کمتره.)
-    // Name[Length - 1] = First; // حالا حرف آخر ورودی کاربر رو با مقدار حرف اول ورودیش که قبلا ذخیره کرده بودیم برابر میزاریم.
+    // show number of members :
+    cout << sizeof(Scores) / sizeof(float) << "\n"; // show number of Score members.
+    cout << size(Scores) << "\n";                   // show number of Score members.
 
-    // cout << Name << "\n"; // در نهایت متن نهایی رو به عنوان خروجی چاپ می کنیم.
+    // Strings
 
-    int Table[3][4] = {{1, 2, 3, 4},
-                       {5, 6, 7, 8}, 
+    // definition :
+    char MyText[] = "Hello World!";
+    cout << MyText << "\n";
+
+    // get first of Array
+    string Text = "This is a text";
+    cout << Text[0] << "\n";
+
+    // get last of Array
+    cout << Text[size(Text) - 1] << "\n";
+
+    // get input using cin :
+    cout << "\nEnter your input(cin) : ";
+    string cinInput;
+    cin >> cinInput;
+    cout << "this is your input in cin : " << cinInput << "\n";
+
+    // get input using getline() :
+    cout << "\nEnter your input(getline) : ";
+    string getlineInput;
+    getline(cin, getlineInput);
+    cout << "this is your input in getline() : " << getlineInput << "\n";
+
+    // Practice 1
+    string Name1;
+    getline(cin, Name1);
+    Name1[0] = 'P';
+    cout << "your new name : " << Name1 << "\n";
+
+    // Practice 2
+    string Name2;
+    getline(cin, Name2);
+
+    char first = Name2[0];
+
+    int Length = size(Name2);
+
+    Name2[0] = Name2[Length - 1];
+    Name2[Length - 1] = first;
+
+    cout << "your new name : " << Name2 << "\n";
+
+    // Multi dimensional Arrays :
+
+    // Two Dimensional :
+    int rect[3][4];
+    rect[0][0] = 1;
+    rect[0][1] = 2;
+    rect[0][2] = 3;
+    rect[0][3] = 4;
+    rect[1][0] = 5;
+    rect[1][1] = 6;
+    rect[1][2] = 7;
+    rect[1][3] = 8;
+    rect[2][0] = 9;
+    rect[2][1] = 10;
+    rect[2][2] = 11;
+    rect[2][3] = 12;
+
+    cout << "rect[1][2] : " << rect[1][2] << "\n";
+    int rect2[3][4] = {{1, 2, 3, 4},
+                       {5, 6, 7, 8},
                        {9, 10, 11, 12}};
-    int Cube[3][3][3];
-    int Test[1][1][1][1][1][1][1][1][1][1][1];
+
+    cout << "rect2[1][2] : " << rect2[1][2] << "\n";
+
+    // 3D Array :
+    int Cube[2][2][2] = {
+        {{1, 2},
+         {3, 4}},
+
+        {{5, 6},
+         {7, 8}}};
+    cout << "Cube[1][0][1] : "<< Cube[1][0][1] << "\n"; 
+    
+    
     return 0;
 }
