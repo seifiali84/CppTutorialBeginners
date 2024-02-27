@@ -14,7 +14,7 @@ int main()
     {
         cout << "This code will never run";
     }
-    
+
     // Logical Operators :
 
     // &&
@@ -89,5 +89,61 @@ int main()
     {                     // اگر 1 بزرگتر از 0 نبود
         cout << "1 <= 0"; // بنویس 1 کوچیکتر یا مساوی با صفره.
     }
+
+    // switch :
+    int a = 3;
+    switch (a)
+    {
+    case 0:
+        cout << "a is 0"
+             << "\n";
+        break;
+    case 1:
+        cout << "a is 1"
+             << "\n";
+        break;
+    case 2:
+        cout << "a is 2"
+             << "\n";
+        break;
+    case 3:
+        cout << "a is 3"
+             << "\n";
+        break;
+    default:
+        cout << "a is 4"
+             << "\n";
+    }
+
+    // without break
+    a = 0;
+
+    switch (a)
+    {
+    case 0:
+        cout << "0";
+    case 1:
+        cout << "1";
+        break;
+    case 2:
+        cout << "2";
+    default:
+        cout << "def";
+    }
+
+    a = 1;
+    switch (a)
+    {
+    case 0:
+        cout << "0";
+        break;
+    case 1:
+        cout << "1";
+    case 2:
+        cout << "2";
+    default:
+        cout << "def";
+    }
+
     return 0;
 }
