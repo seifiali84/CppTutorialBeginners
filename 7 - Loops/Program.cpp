@@ -13,7 +13,7 @@ int main()
     }
 
     cout << "\n";
-    
+
     // for in for
     for (int i = 0; i < 5; i++) // حلقه ی 1
     {
@@ -160,18 +160,18 @@ int main()
     // define input
     string input2 = "Ali,Hamed,Amin";
     // create an index counter :
-    int index = 0;
+    int index1 = 0;
     // Split data by ',' and save to Names Array
     string Names2[3];
     for (char c : input2)
     {
         if (c != ',')
         {
-            Names2[index] += c;
+            Names2[index1] += c;
         }
         else
         {
-            index++;
+            index1++;
         }
     }
     // Show Array Members
@@ -180,6 +180,40 @@ int main()
         cout << s << "\n";
     }
     cout << "\n";
+
+    // Convert String with unknown size to Array
+    // define input
+    string input3 = "Ali,Hamed,Amin";
+    // Count Array Members :
+    int Size = 1;
+    for (char c : input3)
+    {
+        if (c == ',')
+        {
+            Size++;
+        }
+    }
+
+    // Split data by ',' and save to Names Array
+    string Names[Size];
+    // create an index counter :
+    int index2 = 0;
+    for (char c : input3)
+    {
+        if (c != ',')
+        {
+            Names[index2] += c;
+        }
+        else
+        {
+            index2++;
+        }
+    }
+    // Show Array Members
+    for (string s : Names)
+    {
+        cout << s << "\n";
+    }
 
     // Work with Vectors :
     vector<int> Numbers3;
