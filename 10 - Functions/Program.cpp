@@ -46,6 +46,7 @@ void ShowMembers(string Names[])
         cout << i + 1 <<  " - " << Names[i] << "\n";
     }
 }
+void MyFunction();
 
 int main()
 {
@@ -75,7 +76,10 @@ int main()
     string Names[] = {"Ali", "Arshia", "Amin"};
     ShowMembers(Names);
 
-    
+    MyFunction();
 
     return 0;
+}
+void MyFunction(){
+    cout << "MyFunction() Works!";
 }
