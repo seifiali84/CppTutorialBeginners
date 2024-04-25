@@ -136,7 +136,7 @@ int main(){
 	human1.Age = 18;
 
 	// show human1 information
-	cout << "Name : " << human1.Name << " | Family : " << human1.Family << " | Age : " << human.Age << "\n";
+	cout << "Name : " << human1.Name << " | Family : " << human1.Family << " | Age : " << human1.Age << "\n";
 	
 	return 0;
 }
@@ -234,3 +234,4 @@ Benz - 71B234
 داخل قسمت های بعدی وارد برنامه نویسی شی گرا میشیم و میبینید که شی گرایی شباهت زیادی با مباحثی که توی این قسمت داشتیم دارن و اونجا بیشتر و عمیق تر در مورد این مباحث صحبت می کنیم.
 
 
+از داخل این فایل میتونید کد های این قسمت رو ببینید و فایل رو برای خودتون اجرا کنید تا نتیجه ی کد هارو ببینید : [Examples](Program.cpp)
