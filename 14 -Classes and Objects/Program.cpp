@@ -20,6 +20,45 @@ public:
     int LegsCount;
 };
 
+class Computer
+{
+public:
+    string Motherboard;
+    string CPU;
+    int Ram;
+    string GPU;
+    int Storage;
+
+    static vector<Computer> Inventory;
+
+    void Buy()
+    {
+        Inventory.push_back(*this);
+        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Bought." << endl;
+    }
+    void Sell()
+    {
+        // Find Index to Delete :
+        int Index = 0;
+        for (Computer c : Inventory)
+        {
+            if (c.Motherboard == Motherboard &&
+                c.CPU == CPU &&
+                c.GPU == GPU &&
+                c.Ram == Ram &&
+                c.Storage == Storage)
+            {
+                break;
+            }
+            Index++;
+        }
+
+        // Delete From Inventory :
+        Inventory.erase(Inventory.begin() + Index);
+        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
+    }
+};
+
 int main()
 {
     // Fruit
@@ -93,5 +132,39 @@ int main()
         cout << "Name : " << a.Name << " - Legs : " << a.LegsCount << " - Is Wild? " << a.IsWild << endl;
     }
 
+    // Computer
+
+    // Create Instances
+    Computer c1;
+    Computer c2;
+
+    // Set c1 Attributes
+    c1.Motherboard = "Asus z690";
+    c1.CPU = "Intel i9-9900k";
+    c1.GPU = "Nvidia GTX-1660Ti";
+    c1.Ram = 12;
+    c1.Storage = 1024;
+
+    // Set c2 Attributes
+    c2.Motherboard = "Asus b550";
+    c2.CPU = "AMD Ryzen 5";
+    c2.GPU = "Nvidia gt-730";
+    c2.Ram = 8;
+    c2.Storage = 3072;
+
+    // Buy Computers and Add Them To Inventory
+    c1.Buy();
+    c2.Buy();
+
+    // Sell c1
+    c1.Sell();
+
+    // Check Inventory :
+    for (Computer c : Computer::Inventory)
+    {
+        cout << c.Motherboard << " - " << c.CPU << " - " << c.GPU << " - " << c.Ram << " - " << c.Storage << " Was Sold." << endl;
+    }
+
+    
     return 0;
 }
