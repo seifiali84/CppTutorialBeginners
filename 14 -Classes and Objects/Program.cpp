@@ -164,7 +164,6 @@ int main()
     {
         cout << c.Motherboard << " - " << c.CPU << " - " << c.GPU << " - " << c.Ram << " - " << c.Storage << " Was Sold." << endl;
     }
-
     
     return 0;
 }

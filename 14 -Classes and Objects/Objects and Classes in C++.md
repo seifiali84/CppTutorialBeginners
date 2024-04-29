@@ -518,49 +518,5 @@ public:
 
 داخل شرایط بالا این مهم میشه که ما اطلاعاتی رو ازشون بدونیم که اونارو از هم تفکیک کنه (مثل کد ملی) و در صورتی که این اطلاعات رو ازشون نداشتیم با اضافه کردن یکسری اطلاعات به اونا بیایم و اونارو از هم دیگه تفکیک کنیم. (مثل کد اشتراک) داخل این قسمت وارد اون بخش ها نمیشیم.
 
-در نهایت کد برنامه ی ما به صورت زیر شد :
-```cpp
-class Computer
-{
-public:
-    string Motherboard;
-    string CPU;
-    int Ram;
-    string GPU;
-    int Storage;
+منطق کدی که تا الان نوشتیم کاملا درسته ولی وقتی اجراش کنیم به ارور می خوره که الان به بررسی اینکه چرا ارور می خوره و چطور میتونیم این مشکل رو حل کنیم می پردازیم.
 
-    static vector<Computer> Inventory;
-  
-    void Buy()
-    {
-        Inventory.push_back(*this);
-        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << endl;
-    }
-    void Sell()
-    {
-        // Find Index to Delete :
-        int Index = 0;
-        for (Computer c : Inventory)
-        {
-            if (c.Motherboard == Motherboard &&
-                c.CPU == CPU &&
-                c.GPU == GPU &&
-                c.Ram == Ram &&
-                c.Storage == Storage)
-            {
-                break;
-            }
-            Index++;
-        }
-  
-        // Delete From Inventory :
-        Inventory.erase(Inventory.begin() + Index);
-        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
-    }    
-};
-
-int main()
-{
-	
-}
-```
