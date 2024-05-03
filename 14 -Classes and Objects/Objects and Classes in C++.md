@@ -403,7 +403,9 @@ public:
 برای دسترسی به مقدار متغیر `static` ساخته شده هم باید از روش زیر استفاده کنیم :
 ```cpp
 int main(){
-	
+	MyClass::RemainingComputers = 12;
+
+	cout << MyClass::RemainingComputers << endl;
 	return 0;
 }
 ```
