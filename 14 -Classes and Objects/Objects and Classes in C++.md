@@ -520,3 +520,227 @@ public:
 
 منطق کدی که تا الان نوشتیم کاملا درسته ولی وقتی اجراش کنیم به ارور می خوره که الان به بررسی اینکه چرا ارور می خوره و چطور میتونیم این مشکل رو حل کنیم می پردازیم.
 
+### Definition Order in cpp
+
+داخل سی پلاس پلاس این اهمیت داره که چیزی رو که می خوای ازش استفاده کنی حتما قبلش تعریف کرده باشی. و به همین دلیل ما تعریف توابع و کلاس هارو بعد از بدنه ی اصلی برنامه نمیزاریم و قبل از اون میزاریم.
+
+داخل کد بالا ما داخل کلاس کامپیوتر اومدیم و یک لیست ساختیم که از نوع کلاس کامپیوتره.
+در صورتی که هنوز کلاس کامپیوتر کامل تعریف نشده. 
+
+برای حل کردن این مشکل ما میایم و این لیست انبار رو بعد از اینکه کلاسمون تعریف شد به برنامه اضافه می کنیم و خارج از بدنه ی کلاس اون رو میزاریم (یعنی دیگه نیازی نیست که `static` باشه و میتونیم خیلی معمولی صرفا توی برنامه تعریفش کنیم.)
+
+یعنی کدمون به کد زیر تبدیل میشه :
+```cpp
+class Computer
+{
+public:
+    string Motherboard;
+    string CPU;
+    int Ram;
+    string GPU;
+    int Storage;
+  
+    void Buy()
+    {
+        Inventory.push_back(*this);
+        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Bought." << endl;
+    }
+   void Sell()
+   {
+       // Find Index to Delete :
+       int Index = 0;
+        for (Computer c : Inventory)
+        {
+            if (c.Motherboard == Motherboard &&
+                c.CPU == CPU &&
+                c.GPU == GPU &&
+                c.Ram == Ram &&
+                c.Storage == Storage)
+            {
+                break;
+            }
+            Index++;
+        }
+  
+        // Delete From Inventory :
+        Inventory.erase(Inventory.begin() + Index);
+        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
+    }
+};
+  
+vector<Computer> Inventory;
+```
+
+اما هنوزم یک مشکل داخل توابعی که داخل کلاسمون داریم وجود داره. ما داخل توابعمون با لیست انباری که بعد از تعریف کلاس تعریف کردیم کار داریم و از لیست انبارمون داخل توابع استفاده کردیم در صورتی که لیست انبار داخل خط های بعدی تعریف شده و توابع نمیتونن بهش دسترسی داشته باشن.
+
+برای حل کردن این مشکل از مفهومی به اسم Declaration یا اعلان کردن استفاده می کنیم
+
+داخل این روش ما میایم و تابعی که قراره داخل کلاس باشه رو صرفا معرفی می کنیم و داخل خط های بعدی (حتی بعد از تعریف کلاس) اون رو کامل تعریف می کنیم و بدنه ی اون رو می نویسیم.
+
+برای اعلان کردن تابع کافیه که امضای تابع رو به همراه یک `;` داخل کلاس بزاریم.
+
+> یادآوری : امضای تابع همون خط اولی هست که می نویسیم. شامل نوع خروجی تابع، نام تابع ، ورودی های تابع میشه.
+
+و در ادامه برای تعریف تابع باید بگیم که تابع در بدنه ی کلاسمون بوده. 
+
+در کل سینتکس این کار به صورت زیر میشه :
+```cpp
+class MyClass {        // The class  
+  public:              // Access specifier  
+    void myMethod();   // Method/function declaration  
+};  
+  
+// Method/function definition outside the class  
+void MyClass::myMethod() {  
+  cout << "Hello World!";  
+}
+```
+
+که در بدنه ی کلاسمون `void myMethod();` میاد و تابع رو declare یا اعلان می کنه و بعد از تعریف کلاس با استفاده از `void MyClass::myMethod(){}` میتونیم بدنه ی تابع خودمون رو مشخص کنیم.
+
+یعنی کد ما در نهایت به شکل زیر در میاد :
+
+```cpp
+class Computer
+{
+public:
+    string Motherboard;
+    string CPU;
+    int Ram;
+    string GPU;
+    int Storage;
+  
+    void Buy();
+    void Sell();
+};
+  
+vector<Computer> Inventory;
+  
+void Computer::Buy()
+{
+    Inventory.push_back(*this);
+    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Bought." << endl;
+}
+
+void Computer::Sell()
+{
+    // Find Index to Delete :
+    int Index = 0;
+    for (Computer c : Inventory)
+    {
+        if (c.Motherboard == Motherboard &&
+            c.CPU == CPU &&
+            c.GPU == GPU &&
+            c.Ram == Ram &&
+            c.Storage == Storage)
+        {
+            break;
+        }
+        Index++;
+    }
+  
+    // Delete From Inventory :
+    Inventory.erase(Inventory.begin() + Index);
+    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
+}
+```
+
+در کل همونطور که دیدید ما اول میایم و منطق برنامه رو درست پیاده سازی می کنیم و بعدا اگر جایی مشکل داشت با درست کردن ترتیب تعریف اجزاء برنامه مون میایم و مشکل رو حل می کنیم.
+
+و همونطور هم که دیدید شما با دونستن روش های توسعه میتونید روندی که داخل برنامه تون می خواد شکل بگیره رو مشخص کنید و در نهایت با سرچ کردن و در آوردن سینتکس اون کاری که می خواید انجام بدید به راحتی میتونید اون رو پیاده سازی کنید. (البته مهمه که به اون کاری که می خواید انجام بدید تسلط کافی داشته باشید تا بتونید در جای درستی ازش استفاده کنید.)
+
+در نهایت جواب مثال 3 رو کنار هم دیگه بچینیم به صورت زیر در میاد :
+
+```cpp
+class Computer
+{
+public:
+    string Motherboard;
+    string CPU;
+    int Ram;
+    string GPU;
+    int Storage;
+  
+    void Buy();
+    void Sell();
+};
+  
+vector<Computer> Inventory;
+  
+void Computer::Buy()
+{
+    Inventory.push_back(*this);
+    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Bought." << endl;
+}
+
+void Computer::Sell()
+{
+    // Find Index to Delete :
+    int Index = 0;
+    for (Computer c : Inventory)
+    {
+        if (c.Motherboard == Motherboard &&
+            c.CPU == CPU &&
+            c.GPU == GPU &&
+            c.Ram == Ram &&
+            c.Storage == Storage)
+        {
+            break;
+        }
+        Index++;
+    }
+  
+    // Delete From Inventory :
+    Inventory.erase(Inventory.begin() + Index);
+    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
+}
+
+int main(){
+	// Create Instances
+    Computer c1;
+    Computer c2;
+  
+    // Set c1 Attributes
+    c1.Motherboard = "Asus z690";
+    c1.CPU = "Intel i9-9900k";
+    c1.GPU = "Nvidia GTX-1660Ti";
+    c1.Ram = 12;
+    c1.Storage = 1024;
+  
+    // Set c2 Attributes
+    c2.Motherboard = "Asus b550";
+    c2.CPU = "AMD Ryzen 5";
+    c2.GPU = "Nvidia gt-730";
+    c2.Ram = 8;
+    c2.Storage = 3072;
+  
+    // Buy Computers and Add Them To Inventory
+    c1.Buy();
+    c2.Buy();
+  
+    // Sell c1
+    c1.Sell();
+  
+    // Check Inventory :
+    for (Computer c : Inventory)
+    {
+        cout << c.Motherboard << " - " << c.CPU << " - " << c.GPU << " - " << c.Ram << " - " << c.Storage << " Remains" << endl;
+    }
+  
+    return 0;
+}
+```
+
+که اگر اجراش کنیم خروجی زیر رو به ما نشون میده و یعنی درست کار می کنه :
+```output
+Asus z690 - Intel i9-9900k - Nvidia GTX-1660Ti - 12 - 1024 Was Bought.
+Asus b550 - AMD Ryzen 5 - Nvidia gt-730 - 8 - 3072 Was Bought.
+Asus z690 - Intel i9-9900k - Nvidia GTX-1660Ti - 12 - 1024 Was Sold.
+Asus b550 - AMD Ryzen 5 - Nvidia gt-730 - 8 - 3072 Remains
+```
+
+برای اینکه قسمت ها خیلی هم طولانی نشن این مبحث رو به دو قسمت میشکنیم که خیلی زیاد طولانی نشه. مبحث شی گرایی بحثی هست که با دیدن مثال های زیاد قدرت تحلیل و تصمیم رو به شما میده و وقتی حالت های مختلف رو بشناسید به راحتی میتونید برنامه های سنگین رو تحلیل کنید و پیاده سازی کنید.
+
+داخل این قسمت با مقدمات شی گرایی تا حد خوبی آشنا شدید. داخل قسمت بعد مثال مدیریت آزمون های قلمچی رو پیاده سازی می کنیم و با یکسری موارد پایه ای دیگه داخل شی گرایی آشنایی پیدا می کنیم.
+
+کد های این قسمت رو هم میتونید از اینجا ببینید و خودتون اجرا کنید و تغییرات داخلشون ایجاد کنید : [Examples](Program.cpp)
