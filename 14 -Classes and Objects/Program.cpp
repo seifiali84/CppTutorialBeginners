@@ -29,39 +29,37 @@ public:
     string GPU;
     int Storage;
 
-    void Buy();
-    void Sell();
+    static vector<Computer> Inventory;
+  
+    void Buy()
+    {
+        Inventory.push_back(*this);
+        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << endl;
+    }
+    void Sell()
+    {
+        // Find Index to Delete :
+        int Index = 0;
+        for (Computer c : Inventory)
+        {
+            if (c.Motherboard == Motherboard &&
+                c.CPU == CPU &&
+                c.GPU == GPU &&
+                c.Ram == Ram &&
+                c.Storage == Storage)
+            {
+                break;
+            }
+            Index++;
+        }
+  
+        // Delete From Inventory :
+        Inventory.erase(Inventory.begin() + Index);
+        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
+    }    
 };
 
-vector<Computer> Inventory;
-
-void Computer::Buy()
-{
-    Inventory.push_back(*this);
-    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Bought." << endl;
-}
-
-void Computer::Sell()
-{
-    // Find Index to Delete :
-    int Index = 0;
-    for (Computer c : Inventory)
-    {
-        if (c.Motherboard == Motherboard &&
-            c.CPU == CPU &&
-            c.GPU == GPU &&
-            c.Ram == Ram &&
-            c.Storage == Storage)
-        {
-            break;
-        }
-        Index++;
-    }
-
-    // Delete From Inventory :
-    Inventory.erase(Inventory.begin() + Index);
-    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
-}
+vector<Computer> Computer::Inventory;
 
 int main()
 {
@@ -164,7 +162,7 @@ int main()
     c1.Sell();
 
     // Check Inventory :
-    for (Computer c : Inventory)
+    for (Computer c : Computer::Inventory)
     {
         cout << c.Motherboard << " - " << c.CPU << " - " << c.GPU << " - " << c.Ram << " - " << c.Storage << " Remains" << endl;
     }

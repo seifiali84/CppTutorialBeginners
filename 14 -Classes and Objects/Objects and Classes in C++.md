@@ -395,10 +395,16 @@ class MyClass
 {
 public:
 	static int RemainingComputers;
-}
+};
+
+int MyClass::RemainingComputers;
 ```
 
+دقت داشته باشید که وقتی یک متد یا ویژگی استاتیک رو داخل تابع گذاشتید در واقع فقط به تابع اعلام کردید که قراره این ویژگی یا متد استاتیک رو داشته باشه. برای اینکه این ویژگی رو دارا بشه بعد از اینکه اونو معرفی کردید باید تعریفش هم کنید که داخل خط آخر کد بالا طریقه ی انجام این کار رو میتونید ببینید.
+
 > در واقع با اینکار داریم یک متغیر رو خیلی عادی داخل کلاسمون تعریف می کنیم به جای اینکه داخل بدنه ی اصلیمون ذخیره کنیم. اینجوری میتونیم چیزای مرتبط به کلاس رو داخل خود اون کلاس بزاریم تا برنامه مون شلوغ نشه. جلوتر میبینیم که توابع رو هم میتونیم اینجوری static تعریف کنیم.
+
+
 
 برای دسترسی به مقدار متغیر `static` ساخته شده هم باید از روش زیر استفاده کنیم :
 ```cpp
@@ -434,6 +440,8 @@ public:
 
     }
 };
+
+vector<Computer> Computer::Inventory;
 ```
 حالا فقط کافیه داخل تابع `Buy()` بیایم و عنصری که تابع روش صدا زده شده رو به لیست اضافه کنیم.
 
@@ -465,6 +473,8 @@ public:
         cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << endl;
     }
 };
+
+vector<Computer> Computer::Inventory;
 ```
 داخل خط اول تابع میایم و آبجکت رو به لیست انبارمون اضافه می کنیم و داخل خط بعدی هم برای اینکه ببینیم کدوم کامپیوتر فروخته شده مشخصات اون کامپیوتر رو با استفاده از ویژگی های اونا داخل ترمینال چاپ می کنیم.
 
@@ -513,6 +523,8 @@ public:
         cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
     }    
 };
+
+vector<Computer> Computer::Inventory;
 ```
 داخل این کد ما اون عضوی رو که دقیقا با آبجکت خودمون یکی باشه رو پیدا می کنیم و اون رو حذف می کنیم.
 
@@ -520,18 +532,8 @@ public:
 
 داخل شرایط بالا این مهم میشه که ما اطلاعاتی رو ازشون بدونیم که اونارو از هم تفکیک کنه (مثل کد ملی) و در صورتی که این اطلاعات رو ازشون نداشتیم با اضافه کردن یکسری اطلاعات به اونا بیایم و اونارو از هم دیگه تفکیک کنیم. (مثل کد اشتراک) داخل این قسمت وارد اون بخش ها نمیشیم.
 
-منطق کدی که تا الان نوشتیم کاملا درسته ولی وقتی اجراش کنیم به ارور می خوره که الان به بررسی اینکه چرا ارور می خوره و چطور میتونیم این مشکل رو حل کنیم می پردازیم.
+و برای تست کردن اینکه کلاسمون رو درست تعریف کردیم یا نه کد بدنه ی اصلی برنامه مون رو هم مینویسیم و در نهایت کد ما به صورت زیر خواهد شد :
 
-### Definition Order in cpp
-
-داخل سی پلاس پلاس این اهمیت داره که چیزی رو که می خوای ازش استفاده کنی حتما قبلش تعریف کرده باشی. و به همین دلیل ما تعریف توابع و کلاس هارو بعد از بدنه ی اصلی برنامه نمیزاریم و قبل از اون میزاریم.
-
-داخل کد بالا ما داخل کلاس کامپیوتر اومدیم و یک لیست ساختیم که از نوع کلاس کامپیوتره.
-در صورتی که هنوز کلاس کامپیوتر کامل تعریف نشده. 
-
-برای حل کردن این مشکل ما میایم و این لیست انبار رو بعد از اینکه کلاسمون تعریف شد به برنامه اضافه می کنیم و خارج از بدنه ی کلاس اون رو میزاریم (یعنی دیگه نیازی نیست که `static` باشه و میتونیم خیلی معمولی صرفا توی برنامه تعریفش کنیم.)
-
-یعنی کدمون به کد زیر تبدیل میشه :
 ```cpp
 class Computer
 {
@@ -541,16 +543,18 @@ public:
     int Ram;
     string GPU;
     int Storage;
+
+    static vector<Computer> Inventory;
   
     void Buy()
     {
         Inventory.push_back(*this);
-        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Bought." << endl;
+        cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << endl;
     }
-   void Sell()
-   {
-       // Find Index to Delete :
-       int Index = 0;
+    void Sell()
+    {
+        // Find Index to Delete :
+        int Index = 0;
         for (Computer c : Inventory)
         {
             if (c.Motherboard == Motherboard &&
@@ -567,138 +571,13 @@ public:
         // Delete From Inventory :
         Inventory.erase(Inventory.begin() + Index);
         cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
-    }
+    }    
 };
-  
-vector<Computer> Inventory;
-```
 
-اما هنوزم یک مشکل داخل توابعی که داخل کلاسمون داریم وجود داره. ما داخل توابعمون با لیست انباری که بعد از تعریف کلاس تعریف کردیم کار داریم و از لیست انبارمون داخل توابع استفاده کردیم در صورتی که لیست انبار داخل خط های بعدی تعریف شده و توابع نمیتونن بهش دسترسی داشته باشن.
-
-برای حل کردن این مشکل از مفهومی به اسم Declaration یا اعلان کردن استفاده می کنیم
-
-داخل این روش ما میایم و تابعی که قراره داخل کلاس باشه رو صرفا معرفی می کنیم و داخل خط های بعدی (حتی بعد از تعریف کلاس) اون رو کامل تعریف می کنیم و بدنه ی اون رو می نویسیم.
-
-برای اعلان کردن تابع کافیه که امضای تابع رو به همراه یک `;` داخل کلاس بزاریم.
-
-> یادآوری : امضای تابع همون خط اولی هست که می نویسیم. شامل نوع خروجی تابع، نام تابع ، ورودی های تابع میشه.
-
-و در ادامه برای تعریف تابع باید بگیم که تابع در بدنه ی کلاسمون بوده. 
-
-در کل سینتکس این کار به صورت زیر میشه :
-```cpp
-class MyClass {        // The class  
-  public:              // Access specifier  
-    void myMethod();   // Method/function declaration  
-};  
-  
-// Method/function definition outside the class  
-void MyClass::myMethod() {  
-  cout << "Hello World!";  
-}
-```
-
-که در بدنه ی کلاسمون `void myMethod();` میاد و تابع رو declare یا اعلان می کنه و بعد از تعریف کلاس با استفاده از `void MyClass::myMethod(){}` میتونیم بدنه ی تابع خودمون رو مشخص کنیم.
-
-یعنی کد ما در نهایت به شکل زیر در میاد :
-
-```cpp
-class Computer
-{
-public:
-    string Motherboard;
-    string CPU;
-    int Ram;
-    string GPU;
-    int Storage;
-  
-    void Buy();
-    void Sell();
-};
-  
-vector<Computer> Inventory;
-  
-void Computer::Buy()
-{
-    Inventory.push_back(*this);
-    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Bought." << endl;
-}
-
-void Computer::Sell()
-{
-    // Find Index to Delete :
-    int Index = 0;
-    for (Computer c : Inventory)
-    {
-        if (c.Motherboard == Motherboard &&
-            c.CPU == CPU &&
-            c.GPU == GPU &&
-            c.Ram == Ram &&
-            c.Storage == Storage)
-        {
-            break;
-        }
-        Index++;
-    }
-  
-    // Delete From Inventory :
-    Inventory.erase(Inventory.begin() + Index);
-    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
-}
-```
-
-در کل همونطور که دیدید ما اول میایم و منطق برنامه رو درست پیاده سازی می کنیم و بعدا اگر جایی مشکل داشت با درست کردن ترتیب تعریف اجزاء برنامه مون میایم و مشکل رو حل می کنیم.
-
-و همونطور هم که دیدید شما با دونستن روش های توسعه میتونید روندی که داخل برنامه تون می خواد شکل بگیره رو مشخص کنید و در نهایت با سرچ کردن و در آوردن سینتکس اون کاری که می خواید انجام بدید به راحتی میتونید اون رو پیاده سازی کنید. (البته مهمه که به اون کاری که می خواید انجام بدید تسلط کافی داشته باشید تا بتونید در جای درستی ازش استفاده کنید.)
-
-در نهایت جواب مثال 3 رو کنار هم دیگه بچینیم به صورت زیر در میاد :
-
-```cpp
-class Computer
-{
-public:
-    string Motherboard;
-    string CPU;
-    int Ram;
-    string GPU;
-    int Storage;
-  
-    void Buy();
-    void Sell();
-};
-  
-vector<Computer> Inventory;
-  
-void Computer::Buy()
-{
-    Inventory.push_back(*this);
-    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Bought." << endl;
-}
-
-void Computer::Sell()
-{
-    // Find Index to Delete :
-    int Index = 0;
-    for (Computer c : Inventory)
-    {
-        if (c.Motherboard == Motherboard &&
-            c.CPU == CPU &&
-            c.GPU == GPU &&
-            c.Ram == Ram &&
-            c.Storage == Storage)
-        {
-            break;
-        }
-        Index++;
-    }
-  
-    // Delete From Inventory :
-    Inventory.erase(Inventory.begin() + Index);
-    cout << Motherboard << " - " << CPU << " - " << GPU << " - " << Ram << " - " << Storage << " Was Sold." << endl;
-}
+vector<Computer> Computer::Inventory;
 
 int main(){
-	// Create Instances
+    // Create Instances
     Computer c1;
     Computer c2;
   
@@ -724,7 +603,7 @@ int main(){
     c1.Sell();
   
     // Check Inventory :
-    for (Computer c : Inventory)
+    for (Computer c : Computer::Inventory)
     {
         cout << c.Motherboard << " - " << c.CPU << " - " << c.GPU << " - " << c.Ram << " - " << c.Storage << " Remains" << endl;
     }
@@ -732,6 +611,7 @@ int main(){
     return 0;
 }
 ```
+
 
 که اگر اجراش کنیم خروجی زیر رو به ما نشون میده و یعنی درست کار می کنه :
 ```output
