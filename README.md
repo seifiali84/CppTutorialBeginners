@@ -146,6 +146,19 @@
 - اعلان کردن توابع داخل کلاس
 - ساختن آبجکت و مقدار دهی اون داخل یک خط
 - آشنایی با Access Specifiers
+
+## قسمت شانزدهم : [Encapsulation , Inheritance and Polymorphism in Cpp](<16 - Encapsulation, Inheritance and Polymorphism/Encapsulation, Inheritance and Polymorphism.md>)
+
+داخل این قسمت شی گرایی رو به پایان میرسونیم و با مفاهیم پیشرفته تر اون مثل Encapsulation و Inheritance و Polymorphism آشنا میشیم. با زدن مثال هایی از هرکدوم هم سعی می کنیم که مطالب رو به خوبی جا بندازیم.
+
+- مفهوم کپسوله کردن
+- مفهوم وراثت و ارث بری
+- وراثت چند مرحله ای
+- ارث بری از چند کلاس
+- آشنایی با کلید واژه ی protected
+- پیاده سازی Polymorphism با استفاده از Method Overloading
+- پیاده سازی Polymorphism با استفاده زا Method Overriding
+
 # قسمت های باقی مانده و نقشه ی راه این جزوه
 
 
@@ -164,6 +177,6 @@
 - [x] قسمت سیزدهم : مقدمه ای بر شی گرایی
 - [x] قسمت چهاردهم : کلاس ها و آبجکت ها در سی پلاس پلاس
 - [x] قسمت پانزدهم : کانستراکتور ها و سطوح دسترسی در کلاس
-- [ ] قسمت شانزدهم :مفاهیم پیشرفته ی شی گرایی (Encapsulation , Inheritance , Polymorphism)
+- [x] قسمت شانزدهم :مفاهیم پیشرفته ی شی گرایی (Encapsulation , Inheritance , Polymorphism)
 - [ ] قسمت هفدهم : کار کردن با فایل ها در سی پلاس پلاس
 - [ ] قسمت هجدهم : Exception Handling در سی پلاس پلاس
