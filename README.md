@@ -159,6 +159,13 @@
 - پیاده سازی Polymorphism با استفاده از Method Overloading
 - پیاده سازی Polymorphism با استفاده زا Method Overriding
 
+## 💰 You can help me by Donating
+در نهایت اگر جزوه واقعا براتون مفید بود و خودتون هم مایل بودید میتونید از طریق لینک های زیر از من حمایت کنید. البته جزوه کاملا رایگانه و هیچ الزامی برای دونیت وجود نداره.
+
+  [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/seifiali84) 
+<a href="https://www.coffeebede.com/seifiali84"><img class="img-fluid" style="width:200px;height:50px;" src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg" /></a>
+  
+
 # قسمت های باقی مانده و نقشه ی راه این جزوه
 
 
