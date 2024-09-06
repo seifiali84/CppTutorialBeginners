@@ -49,6 +49,8 @@ https://t.me/Norex64Channel
 - آشنایی با قواعد نام گذاری متغیر
 - آشنایی با ثابت ها
 
+ویدئوی مربوط به این جلسه : <br>
+[![03 - آشنایی با متغیر ها در سی پلاس پلاس](https://i.ytimg.com/an_webp/XwVWUJzJVUI/mqdefault_6s.webp?du=3000&sqp=CJbY7LYG&rs=AOn4CLCs9YxLFVFFYzccCQnP6by1nJR0HQ)](https://youtu.be/XwVWUJzJVUI?si=asyVolLea8rIMygW)
 
 ## قسمت چهارم : [Operators and User Inputs](<04 - Operators and User inputs/Operators in and Inputs cpp.md>)
 
