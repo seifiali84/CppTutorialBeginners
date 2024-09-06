@@ -52,6 +52,8 @@ https://t.me/Norex64Channel
 ویدئوی مربوط به این جلسه : <br>
 [![03 - آشنایی با متغیر ها در سی پلاس پلاس](https://i.ytimg.com/an_webp/XwVWUJzJVUI/mqdefault_6s.webp?du=3000&sqp=CJbY7LYG&rs=AOn4CLCs9YxLFVFFYzccCQnP6by1nJR0HQ)](https://youtu.be/XwVWUJzJVUI?si=asyVolLea8rIMygW)
 
+داخل این قسمت با متغیر ها در سی پلاس پلاس آشنا میشید و یاد میگیرید چطور یک دیتا رو موقتا داخل برنامه ذخیره کنید.
+
 ## قسمت چهارم : [Operators and User Inputs](<04 - Operators and User inputs/Operators in and Inputs cpp.md>)
 
 داخل این قسمت از کاربر ورودی دریافت می کنید از طریق ترمینال و با عملگر ها در سی پلاس پلاس آشنا خواهید شد.
@@ -59,6 +61,9 @@ https://t.me/Norex64Channel
 - آشنایی با عملگر ها
 - دریافت ورودی از کاربر
 - نوشتن برنامه ی محاسبه ی شاخص توده بدنی
+
+ویدئوی مربوط به این جلسه : <br>
+[![04 - آشنایی با عملگر ها در سی پلاس پلاس](https://i.ytimg.com/an_webp/pcpl5NwKAtI/mqdefault_6s.webp?du=3000&sqp=CIDX7LYG&rs=AOn4CLAylFOI7vd-WzGq4Pz6fZvp43-Wvg)](https://youtu.be/pcpl5NwKAtI?si=-RzmdiXqPyKPh6ys)
 
 ## قسمت پنجم : [Conditions in cpp](<05 - Conditions/Conditions in cpp.md>)
 
