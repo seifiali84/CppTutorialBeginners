@@ -13,7 +13,7 @@ https://youtu.be/umXh5LAefcA
 ویدئوی معرفی دوره ی روی یوتیوب : <br>
 [![00 - دوره سی پلاس پلاس دانشگاهی - معرفی دوره](https://i.ytimg.com/an_webp/umXh5LAefcA/mqdefault_6s.webp?du=3000&sqp=CKDf7LYG&rs=AOn4CLBnU4UmqMJkGYeMzDuFZLcVZGEarA)](https://youtu.be/umXh5LAefcA?si=_HyRa8a7niELCXtw)
 
-برای دنبال کردن اخبار مربوط به ویدئو ها و در کل کار هایی که انجام میدم هم میتونید کانال تلگرام بنده رو دنبال کنید تا بیشتر باهم دیگه تعامل داشته باشیم : 
+برای دنبال کردن اخبار مربوط به ویدئو ها و در کل کار هایی که انجام میدم هم میتونید کانال تلگرام بنده رو دنبال کنید تا بیشتر باهم دیگه تعامل داشته باشیم : <br>
 https://t.me/Norex64Channel
 
 # ترتیب جزوه :
@@ -24,7 +24,8 @@ https://t.me/Norex64Channel
 برای کسانی که اطلاعات زیادی در مورد کامپیوتر و برنامه نویسی ندارن این قسمت توصیه میشه و خوندنش خالی از لطف نیست.
 
 ویدئوی مربوط به این جلسه : <br>
-https://youtu.be/pHvu6_E2T84?si=pBGo6QSU8tH4WBmV
+[![01 - مقدمه ای بر برنامه نویسی و نصب نرم افزار های لازم برای برنامه نویسی سی پلاس پلاس](https://i.ytimg.com/an_webp/pHvu6_E2T84/mqdefault_6s.webp?du=3000&sqp=CLTw7LYG&rs=AOn4CLDTgslID9_Dksb314rZI9QJNUEHAw)](https://youtu.be/pHvu6_E2T84?si=pBGo6QSU8tH4WBmV)
+
 داخل این ویدئو با یه سری مقدمات در مورد برنامه نویسی آشنا میشید و یاد میگیرید که چطور برنامه هایی که برای برنامه نویسی سی پلاس پلاس نیاز دارید رو نصب کنید و این مسیر رو ادامه بدید.
 
 ## قسمت دوم : [First Program](<02 - First Program/Your First Program.md>)
@@ -36,7 +37,8 @@ https://youtu.be/pHvu6_E2T84?si=pBGo6QSU8tH4WBmV
 - بررسی دقیق تر ساختار فایل سی پلاس پلاس
 
 ویدئوی مربوط به این جلسه : <br>
-https://youtu.be/xhoHcFW1yiw?si=R9muB-mYBJwOhrxL
+[![02 - نوشتن و اجرا کردن اولین برنامه سی پلاس پلاس](https://i.ytimg.com/an_webp/xhoHcFW1yiw/mqdefault_6s.webp?du=3000&sqp=CPDl7LYG&rs=AOn4CLABg66oGhWj-Yf_TLR500N57b-8Aw)](https://youtu.be/xhoHcFW1yiw?si=R9muB-mYBJwOhrxL)
+
 داخل این ویدئو اولین برنامه مون رو مینویسیم و با ساختار کلی برنامه های سی پلاس پلاس آشنا میشیم
 
 ## قسمت سوم : [Variables and Constants](<03 - Variables and Constants/Variables in cpp.md>)
