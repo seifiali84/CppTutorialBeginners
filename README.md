@@ -11,7 +11,7 @@
 https://youtu.be/umXh5LAefcA
 
 ویدئوی معرفی دوره ی روی یوتیوب : <br>
-https://youtu.be/umXh5LAefcA?si=_HyRa8a7niELCXtw
+[![00 - دوره سی پلاس پلاس دانشگاهی - معرفی دوره](https://i.ytimg.com/an_webp/umXh5LAefcA/mqdefault_6s.webp?du=3000&sqp=CKDf7LYG&rs=AOn4CLBnU4UmqMJkGYeMzDuFZLcVZGEarA)](https://youtu.be/umXh5LAefcA?si=_HyRa8a7niELCXtw)
 
 برای دنبال کردن اخبار مربوط به ویدئو ها و در کل کار هایی که انجام میدم هم میتونید کانال تلگرام بنده رو دنبال کنید تا بیشتر باهم دیگه تعامل داشته باشیم : 
 https://t.me/Norex64Channel
