@@ -76,6 +76,9 @@ https://t.me/Norex64Channel
 
 در انتهای این قسمت با استفاده از شرط ها یک بازی ساده (سنگ کاغذ قیچی) پیاده سازی شده که میتونید ببینید و به عنوان تمرین برای خودتون پیاده سازیش کنید و بهش امکانات دیگه ای اضافه کنید.
 
+ویدئوی مربوط به توضیحات شرط ها : <br>
+[![05 - آشنایی با شرط ها در سی پلاس پلاس](https://i.ytimg.com/an_webp/rP3qMpoDBN8/mqdefault_6s.webp?du=3000&sqp=CILh9rYG&rs=AOn4CLBpv_rvcIp64CgtFBB-MscDbG9HFA)](https://youtu.be/rP3qMpoDBN8?si=CFVpW67JN42760zi)
+ 
 ## قسمت ششم : [Arrays and Strings](<06 - Arrays and Strings/Working with Strings in cpp.md>)
 
 داخل این قسمت با آرایه ها آشنا میشید و میفهمید که `string` ها هم در واقع آرایه  هایی از `char` هستند.
