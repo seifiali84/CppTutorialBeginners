@@ -381,4 +381,4 @@ your BMI is : 16.4384
 
 داخل قسمت بعدی میریم سراغ شرط ها و سعی می کنیم یک برنامه ی کاملتر بنویسیم.
 
-کد های این قسمت رو هم میتونید از اینجا ببینید : [Examples](C++/CppTutorialBeginners/04%20-%20Operators%20and%20User%20inputs/Program.cpp)
+کد های این قسمت رو هم میتونید از اینجا ببینید : [Examples](Program.cpp)
