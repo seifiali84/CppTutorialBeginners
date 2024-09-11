@@ -11,7 +11,7 @@
 https://youtu.be/umXh5LAefcA
 
 ویدئوی معرفی دوره ی روی یوتیوب : <br>
-[![00 - دوره سی پلاس پلاس دانشگاهی - معرفی دوره](https://i.ytimg.com/an_webp/umXh5LAefcA/mqdefault_6s.webp?du=3000&sqp=CKDf7LYG&rs=AOn4CLBnU4UmqMJkGYeMzDuFZLcVZGEarA)](https://youtu.be/umXh5LAefcA?si=_HyRa8a7niELCXtw)
+[![00 - دوره سی پلاس پلاس دانشگاهی - معرفی دوره](MainThumbnail.png)](https://www.youtube.com/watch?v=umXh5LAefcA)
 
 برای دنبال کردن اخبار مربوط به ویدئو ها و در کل کار هایی که انجام میدم هم میتونید کانال تلگرام بنده رو دنبال کنید تا بیشتر باهم دیگه تعامل داشته باشیم : <br>
 https://t.me/Norex64Channel
@@ -24,7 +24,7 @@ https://t.me/Norex64Channel
 برای کسانی که اطلاعات زیادی در مورد کامپیوتر و برنامه نویسی ندارن این قسمت توصیه میشه و خوندنش خالی از لطف نیست.
 
 ویدئوی مربوط به این جلسه : <br>
-[![01 - مقدمه ای بر برنامه نویسی و نصب نرم افزار های لازم برای برنامه نویسی سی پلاس پلاس](https://i.ytimg.com/an_webp/pHvu6_E2T84/mqdefault_6s.webp?du=3000&sqp=CLTw7LYG&rs=AOn4CLDTgslID9_Dksb314rZI9QJNUEHAw)](https://youtu.be/pHvu6_E2T84?si=pBGo6QSU8tH4WBmV)
+[![01 - مقدمه ای بر برنامه نویسی و نصب نرم افزار های لازم برای برنامه نویسی سی پلاس پلاس](<01 - Introduction To Programming/Step-1-Thumbnail.png>)](https://www.youtube.com/watch?v=pHvu6_E2T84)
 
 داخل این ویدئو با یه سری مقدمات در مورد برنامه نویسی آشنا میشید و یاد میگیرید که چطور برنامه هایی که برای برنامه نویسی سی پلاس پلاس نیاز دارید رو نصب کنید و این مسیر رو ادامه بدید.
 
@@ -37,7 +37,7 @@ https://t.me/Norex64Channel
 - بررسی دقیق تر ساختار فایل سی پلاس پلاس
 
 ویدئوی مربوط به این جلسه : <br>
-[![02 - نوشتن و اجرا کردن اولین برنامه سی پلاس پلاس](https://i.ytimg.com/an_webp/xhoHcFW1yiw/mqdefault_6s.webp?du=3000&sqp=CPDl7LYG&rs=AOn4CLABg66oGhWj-Yf_TLR500N57b-8Aw)](https://youtu.be/xhoHcFW1yiw?si=R9muB-mYBJwOhrxL)
+[![02 - نوشتن و اجرا کردن اولین برنامه سی پلاس پلاس](<02 - First Program/Step-2-Thumbnail.png>)](https://www.youtube.com/watch?v=xhoHcFW1yiw)
 
 داخل این ویدئو اولین برنامه مون رو مینویسیم و با ساختار کلی برنامه های سی پلاس پلاس آشنا میشیم
 
@@ -50,7 +50,7 @@ https://t.me/Norex64Channel
 - آشنایی با ثابت ها
 
 ویدئوی مربوط به این جلسه : <br>
-[![03 - آشنایی با متغیر ها در سی پلاس پلاس](https://i.ytimg.com/an_webp/XwVWUJzJVUI/mqdefault_6s.webp?du=3000&sqp=CJbY7LYG&rs=AOn4CLCs9YxLFVFFYzccCQnP6by1nJR0HQ)](https://youtu.be/XwVWUJzJVUI?si=asyVolLea8rIMygW)
+[![03 - آشنایی با متغیر ها در سی پلاس پلاس](<03 - Variables and Constants/Step-3-Thumbnail.png>)](https://www.youtube.com/watch?v=XwVWUJzJVUI)
 
 داخل این قسمت با متغیر ها در سی پلاس پلاس آشنا میشید و یاد میگیرید چطور یک دیتا رو موقتا داخل برنامه ذخیره کنید.
 
@@ -63,7 +63,7 @@ https://t.me/Norex64Channel
 - نوشتن برنامه ی محاسبه ی شاخص توده بدنی
 
 ویدئوی مربوط به این جلسه : <br>
-[![04 - آشنایی با عملگر ها در سی پلاس پلاس](https://i.ytimg.com/an_webp/pcpl5NwKAtI/mqdefault_6s.webp?du=3000&sqp=CIDX7LYG&rs=AOn4CLAylFOI7vd-WzGq4Pz6fZvp43-Wvg)](https://youtu.be/pcpl5NwKAtI?si=-RzmdiXqPyKPh6ys)
+[![04 - آشنایی با عملگر ها در سی پلاس پلاس](<04 - Operators and User inputs/Step-4-Thumbnail.png>)](https://www.youtube.com/watch?v=pcpl5NwKAtI)
 
 ## قسمت پنجم : [Conditions in cpp](<05 - Conditions/Conditions in cpp.md>)
 
@@ -77,7 +77,7 @@ https://t.me/Norex64Channel
 در انتهای این قسمت با استفاده از شرط ها یک بازی ساده (سنگ کاغذ قیچی) پیاده سازی شده که میتونید ببینید و به عنوان تمرین برای خودتون پیاده سازیش کنید و بهش امکانات دیگه ای اضافه کنید.
 
 ویدئوی مربوط به توضیحات شرط ها : <br>
-[![05 - آشنایی با شرط ها در سی پلاس پلاس](https://i.ytimg.com/an_webp/rP3qMpoDBN8/mqdefault_6s.webp?du=3000&sqp=CILh9rYG&rs=AOn4CLBpv_rvcIp64CgtFBB-MscDbG9HFA)](https://youtu.be/rP3qMpoDBN8?si=CFVpW67JN42760zi)
+[![05 - آشنایی با شرط ها در سی پلاس پلاس](<05 - Conditions/Step-5-Thumbnail.png>)](https://www.youtube.com/watch?v=rP3qMpoDBN8)
  
 ## قسمت ششم : [Arrays and Strings](<06 - Arrays and Strings/Working with Strings in cpp.md>)
 
