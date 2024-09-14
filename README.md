@@ -78,6 +78,9 @@ https://t.me/Norex64Channel
 
 ویدئوی مربوط به توضیحات شرط ها : <br>
 [![05 - آشنایی با شرط ها در سی پلاس پلاس](<05 - Conditions/Step-5-Thumbnail.png>)](https://www.youtube.com/watch?v=rP3qMpoDBN8)
+
+و داخل قسمت بعدی یکسری مثال برای بهتر جا افتادن مبحث شرط ها حل می کنیم : <br>
+[![06 - بررسی تعدادی مثال از شرط ها در سی پلاس پلاس](<05 - Conditions/Step-6-Thumbnail.png>)](https://youtu.be/6kNwKMDmyBo?si=59atyE14caCJnxJ3)
  
 ## قسمت ششم : [Arrays and Strings](<06 - Arrays and Strings/Working with Strings in cpp.md>)
 
