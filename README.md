@@ -81,6 +81,9 @@ https://t.me/Norex64Channel
 
 و داخل قسمت بعدی یکسری مثال برای بهتر جا افتادن مبحث شرط ها حل می کنیم : <br>
 [![06 - بررسی تعدادی مثال از شرط ها در سی پلاس پلاس](<05 - Conditions/Step-6-Thumbnail.png>)](https://youtu.be/6kNwKMDmyBo?si=59atyE14caCJnxJ3)
+
+در نهایت برای اتمام حجت و تکمیل مبحث اومدیم و یک بازی سنگ کاغذ قیچی رو پیاده سازی کردیم که میتونید داخل ویدئوی زیر ببینید : <br>
+[![07 - ساختن بازی سنگ کاغذ قیچی در سی پلاس پلاس (مبحث شرط ها)](<05 - Conditions/Step-7-Thumbnail.png>)](https://www.youtube.com/watch?v=GUeiZlnMBzE)
  
 ## قسمت ششم : [Arrays and Strings](<06 - Arrays and Strings/Working with Strings in cpp.md>)
 
