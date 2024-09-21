@@ -379,6 +379,7 @@ if (time < 18) {
 کاری که `switch` انجام میده مشابه همون کاریه که `if` , `else if` , `else` انجام میدادن.
 
 ### سینتکس
+```cpp
 switch(expression) {
   case x:
     // code block
@@ -389,6 +390,7 @@ switch(expression) {
   default:
     // code block
 }
+```
 
 `expression` : یک متغیر که وارد سوییچ می کنیم تا با توجه به مقدارش تصمیم بگیریم.
 
