@@ -1,4 +1,4 @@
-# CppTutorialBeginners
+![image](https://github.com/user-attachments/assets/124be8c3-d175-4609-8fcf-c40b862c2ab2)# CppTutorialBeginners
 جزوه ی سی پلاس پلاس همراه با مثال های کاربردی برای افرادی که تازه قصد ورود به برنامه نویسی دارند و با سی پلاس پلاس شروع کردند.
 
 
@@ -84,7 +84,10 @@ https://t.me/Norex64Channel
 
 در نهایت برای اتمام حجت و تکمیل مبحث اومدیم و یک بازی سنگ کاغذ قیچی رو پیاده سازی کردیم که میتونید داخل ویدئوی زیر ببینید : <br>
 [![07 - ساختن بازی سنگ کاغذ قیچی در سی پلاس پلاس (مبحث شرط ها)](<05 - Conditions/Step-7-Thumbnail.png>)](https://www.youtube.com/watch?v=GUeiZlnMBzE)
- 
+
+در ادامه هم داخل این بخش از جزوه به توضیح مبحث Switch داخل سی پلاس پلاس پرداختیم که میتونید داخل این ویدئو ببینید : <br>
+[![08 - آشنایی با سوییچ کیس (Switch Case) در سی پلاس پلاس](<05 - Conditions/Step-8-Thumbnail.png>)](https://www.youtube.com/watch?v=VyQqBftqU0E)
+
 ## قسمت ششم : [Arrays and Strings](<06 - Arrays and Strings/Working with Strings in cpp.md>)
 
 داخل این قسمت با آرایه ها آشنا میشید و میفهمید که `string` ها هم در واقع آرایه  هایی از `char` هستند.
