@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/124be8c3-d175-4609-8fcf-c40b862c2ab2)# CppTutorialBeginners
 جزوه ی سی پلاس پلاس همراه با مثال های کاربردی برای افرادی که تازه قصد ورود به برنامه نویسی دارند و با سی پلاس پلاس شروع کردند.
 
 
