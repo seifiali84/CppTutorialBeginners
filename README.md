@@ -114,6 +114,9 @@ https://t.me/Norex64Channel
 ویدئوی مربوط به آشنایی با حلقه ها (حلقه while) : <br>
 [![10 - آشنایی با حلقه ها در سی پلاس پلاس (while)](<07 - Loops/Step-10-Thumbnail.png>)](https://www.youtube.com/watch?v=cNEwVt23Za0)
 
+ویدئوی مربوط به آشنایی با حلقه ها (حلقه for) : <br>
+[![11 - آشنایی با حلقه ها در سی پلاس پلاس (for)](<07 - Loops/Step-11-Thumbnail.png>)](https://www.youtube.com/watch?v=PmpvfZM8yDw)
+
 ## قسمت هشتم : [Math in cpp](<08 - Math/Math in cpp.md>)
 
 داخل این قسمت یاد میگیرید که چطور از عملگر های ریاضیاتی مثل سینوس و کسینوس یا توان و رادیکال داخل برنامه تون استفاده کنید. 
