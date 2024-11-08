@@ -120,6 +120,9 @@ https://t.me/Norex64Channel
 ویدئوی مربوط به پیمایش روی آرایه ها با استفاده از حلقه ها : <br>
 [![12 - پیمایش روی آرایه ها با استفاده از حلقه ها در سی پلاس پلاس](<07 - Loops/Step-12-Thumbnail.png>)](https://www.youtube.com/watch?v=UP2vs2TeB7I)
 
+ویدئوی حل تمرین مربوط به حلقه ها (رسم اشکال هندسی با علامت *) : <br>
+[![13- حل مثال های مربوط به حلقه ها در سی پلاس پلاس (کشیدن اشکال هندسی با کارکتر * در ترمینال)](<07 - Loops/Step-13-Thumbnail.png>)](https://www.youtube.com/watch?v=iw-3LObfrPI)
+
 
 ## قسمت هشتم : [Math in cpp](<08 - Math/Math in cpp.md>)
 
