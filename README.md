@@ -99,6 +99,9 @@ https://t.me/Norex64Channel
 برای این بخش هم مثل باقی بخش ها ویدئوی یوتیوب آماده شده که میتونید از لینک زیر اون ویدئو رو مشهاده کنید : <br>
 [![09 - آشنایی با مقدمات آرایه ها (Arrays) در سی پلاس پلاس](<06 - Arrays and Strings/Step-9-Thumbnail.png>)](https://www.youtube.com/watch?v=TUNkgwZNR2w)
 
+ویدئوی مربوط به کار کردن با string ها (بخش اول) : <br>
+[![15 - کار کردن با string ها در سی پلاس پلاس (بخش اول)](<06 - Arrays and Strings/Step-15-Thumbnail.png>)](https://www.youtube.com/watch?v=5GAkN2iZUOE)
+
 ## قسمت هفتم : [Loops and Lists](<07 - Loops/Loops and Lists.md>)
 
 در این قسمت با حلقه ها و کاربرد اونها آشنا میشید و یاد میگیرید که با استفاده از حلقه ها به تمام اعضای یک آرایه دسترسی پیدا کنید و از اونا استفاده کنید.
