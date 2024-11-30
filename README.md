@@ -123,6 +123,8 @@ https://t.me/Norex64Channel
 ویدئوی حل تمرین مربوط به حلقه ها (رسم اشکال هندسی با علامت *) : <br>
 [![13- حل مثال های مربوط به حلقه ها در سی پلاس پلاس (کشیدن اشکال هندسی با کارکتر * در ترمینال)](<07 - Loops/Step-13-Thumbnail.png>)](https://www.youtube.com/watch?v=iw-3LObfrPI)
 
+ویدئوی ارتقاء بازی سنگ کاغذ قیچی و معرفی کلمات کلیدی continue و break : <br>
+[![14 - ارتقاء بازی سنگ کاغذ قیچی و معرفی دستور های break و continue در حلقه ها](<07 - Loops/Step-14-Thumbnail.png>)](https://www.youtube.com/watch?v=X_OP5pKBarQ)
 
 ## قسمت هشتم : [Math in cpp](<08 - Math/Math in cpp.md>)
 
