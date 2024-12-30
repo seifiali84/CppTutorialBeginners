@@ -108,6 +108,9 @@ https://t.me/Norex64Channel
 در ادامه برای تسلط بیشتر به string ها این ویدئوی تکمیلی آماده شده که میتونید داخلش ببینید چطور باید بخش های مختلف یک متن رو پیدا کنید و روی داده ی متنی تحلیل انجام بدید : <br>
 [![17 - معرفی حلقه ی for-each در سی پلاس پلاس - تبدیل متن به عدد و Split کردن داده ی متنی](<06 - Arrays and Strings/Step-17-Thumbnail.png>)](https://www.youtube.com/watch?v=OxUMZ5Ua3HE)
 
+ویدئوی مربوط به آرایه های چند بعدی : <br>
+[![18 - بررسی آرایه های چند بعدی(Multi-Dimensional Arrays) در سی پلاس پلاس](<06 - Arrays and Strings/Step-18-Thumbnail.png>)](https://www.youtube.com/watch?v=uFQVhWtm3Dk)
+
 
 ## قسمت هفتم : [Loops and Lists](<07 - Loops/Loops and Lists.md>)
 
