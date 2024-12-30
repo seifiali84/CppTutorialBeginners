@@ -105,6 +105,9 @@ https://t.me/Norex64Channel
 ویدئوی مربوط به کار کردن با string ها (بخش دوم) : <br>
 [![16 -کار کردن با string ها در سی پلاس پلاس (بخش دوم)](<06 - Arrays and Strings/Step-16-Thumbnail.png>)](https://www.youtube.com/watch?v=hoe7a1D3Too)
 
+در ادامه برای تسلط بیشتر به string ها این ویدئوی تکمیلی آماده شده که میتونید داخلش ببینید چطور باید بخش های مختلف یک متن رو پیدا کنید و روی داده ی متنی تحلیل انجام بدید : <br>
+[![17 - معرفی حلقه ی for-each در سی پلاس پلاس - تبدیل متن به عدد و Split کردن داده ی متنی](<06 - Arrays and Strings/Step-17-Thumbnail.png>)](https://www.youtube.com/watch?v=OxUMZ5Ua3HE)
+
 
 ## قسمت هفتم : [Loops and Lists](<07 - Loops/Loops and Lists.md>)
 
